@@ -1,0 +1,108 @@
+body{
+	color: darkblue;
+	background-color: skyblue;
+}
+
+body{
+	font-family: Arial;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-family: Arial;
+	text-align: center;
+	margin: 0;
+	padding: 10;
+}
+
+p{
+	text-align: center;
+}
+
+sub{
+	color: black;
+}
+
+.top-area {
+  height: 100px;              /* 你可以改 */
+  background-color: skyblue; /* 藍色 */
+  padding-top: 15px;
+}
+
+/* 白色內容區域 */
+div.content {
+  background-color: white;
+  min-height: 500px;
+}
+
+/*ul.navbar{
+	position: absolute;
+	top: 2em;
+    left: 3em;
+    width: 15em;
+}*/
+ul.navbar {
+  display: flex;
+  /*width: 100vw;*/
+  list-style: none;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  margin-top: -4px;  
+}
+
+/* navbar 項目 */
+ul.navbar > li {
+  flex: 1;                  /* 等寬 */
+  position: relative;       /* 方便下拉選單絕對定位 */
+}
+
+ul.navbar > li > a {
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 下拉選單 */
+ul.navbar li ul.dropdown-menu {
+  display: none;             /* 預設隱藏 */
+  position: absolute;        /* 絕對定位在 li 下方 */
+  top: 100%;                 
+  left: 0;
+  width: 100%;               /* 和父 li 一樣寬 */
+  list-style: none;
+  background-color: #444;
+}
+
+/* 下拉選單項目 */
+ul.navbar li ul.dropdown-menu li a {
+  display: block;
+  padding: 10px 0;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* hover 顯示下拉選單 */
+ul.navbar li:hover > ul.dropdown-menu {
+  display: block; 
+}
+
+@media all {
+    body {
+        background-color: white;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
+
+
